@@ -6,6 +6,8 @@ import ListOfGoals from './ListOfGoals';
 const App = () => {
 
   const [allGoals, setAllGoals] = useState([]);
+  
+  const handleAddGoal=(goal)=>{setAllGoals([...allGoals,goal]);}
 
   return (
     <div id="main">
